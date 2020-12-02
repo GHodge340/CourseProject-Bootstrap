@@ -1,12 +1,394 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
     <title>Avalanche Creative Media</title>
-</head>
-<body>
-    <h1>A Really Cool Website Is Coming Here Soon</h1>
-    <p>This webpage is under construction</p>
-</body>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css"/>
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css"/>
+
+    <!-- Favicons -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+<!-- CAROUSEL STYLESHEET -->
+   <link href="./css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+<!--HEADER/NAVIGATIONS SECTION-->
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#"><img src="./assets/img/acm-logo1.png" height="60"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navText" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto navbar-right">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#product">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#order">Order Online</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+      </li> 
+      </ul>
+    </div>
+  </nav>
+</header>
+<!--MAIN BODY SECTION -->
+<main role="main">
+<!--CAROUSEL SECTION -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item bgimage1 active">
+         <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Avalanche Creative Media</h1>
+            <p>"Creating Modern Solutions for your business needs..."</p>
+            <p><a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#exampleModal" role="button">Join Our Mailing List</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item bgimage2">  
+       <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Social Media Solutions</h1>
+            <p>Bump your online engagement with our social media package.</p>
+            <p><a class="btn btn-lg btn-primary" href="#services" role="button">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item bgimage3">
+       <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Video Content Creation</h1>
+            <p>Get that video advertisement that stands out. </p>
+            <p><a class="btn btn-lg btn-primary" href="#product" role="button">See Examples</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!--MAILING LIST MODAL -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">JOIN MAILING LIST</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="validationCustom02">Email</label>
+        <input type="email" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">SUBSCRIBE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- GREEN BOX DIVIDER-->
+<div class="greenDivider"></div>
+<!--HEADLINE 1 -->
+  <div class="container headline" id="services">
+    <div class="row">
+      <div class="col"><br><br><br><br>
+        <h1>CREATIVE MEDIA SERVICES</h1><br>
+      </div>
+    </div>
+  </div>  
+  <div class="container marketing">
+<!--PRODUCT/SERVICE SECTION -->  
+    <div class="row">
+      <div class="col-lg-4">
+        <i class="fas fa-thumbs-up"></i>
+        <!--
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <h2>Social Media Marketing</h2>
+        <ul>
+            <li>1 (One Page) Website Design</li>
+            <li>Social Media Acount</li>
+            <li>60 Second Video Ad</li>
+            <li>Free 1 Year Website Hosting</li>
+        </ul>
+        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fas fa-video"></i>
+        <!--
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <h2>Video Production</h2>
+        <ul>
+          <li>60 Second Video Ad</li>
+          <li>1 Voiceover Talent</li>
+          <li>Fully Edited & Graded Video</li>
+          <li>Video Rendering and Formating</li>
+      </ul>
+        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fas fa-wifi"></i>
+        <!--
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <h2>Web Development</h2>
+        <ul>
+          <li>60 Second Video Ad</li>
+          <li>1 Voiceover Talent</li>
+          <li>Fully Edited & Graded Video</li>
+          <li>Video Rendering and Formating</li>
+      </ul>
+        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row --> <hr>
+<!--HEADLINE 2 --> 
+  <div class="container headline" id="product">
+    <div class="row">
+      <div class="col"><br><br><br><br>
+        <h1>PRODUCT GALLERY</h1><br>
+        <p>Here's a few sample products that we've created in the past for some of our affiliates.</p>
+      </div>
+    </div>
+  </div>  
+<!--IMAGE/PRODUCT GALLERY SECTION -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="./assets/img/Video1.png" height="250" alt=""  class="img-thumbnail">
+        <h3>POLITICAL ADS</h3>
+        <p>A professional and clean video promotion for US Virgin Island elected Senator, Marvin Blyden.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./assets/img/Video2.png" height="250" alt=""  class="img-thumbnail">
+        <h3>ENTERTAINMENT ADS</h3>
+        <p>A hip and energetic live stream video advertisement for a popular International Disc Jockey, Dj Avalanche, reaching thousands of new and existing viewers.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./assets/img/Video3.png" height="250" alt=""  class="img-thumbnail">
+        <h3>BUSINESS ADS</h3>
+        <p>An executive corporate video production for top tier businesses such as The Federal Credit Union of St. Thomas, VI.   </p>
+      </div>
+    </div>
+  </div> 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <a href="http://www.djavalanche.com" target="blank"><img src="./assets/img/Wsite1.png" height="250" alt=""  class="img-thumbnail"></a>
+        <h3>BAND/ARTIST PAGE</h3>
+        <p>Here we feature a website we created for a popular artist.  Our artist pages are perfect for the aspiriing and established artist to create there own webspace for promotions.  </p>
+      </div>
+      <div class="col-lg-4">
+        <a href="http://www.Ghodgewebdev.site" target="blank"><img src="./assets/img/Wsite2.png" height="250" alt=""  class="img-thumbnail"></a>
+        <h3>PORTFOLIO PAGE</h3>
+        <p>Improve your chances of scoring that dream job or have a unique digital webspace to showcase your professional accolaids by having us create your digital porfolio. </p>
+      </div>
+      <div class="col-lg-4">
+        <img src="./assets/img/Wsite3.png" height="250" alt=""  class="img-thumbnail">
+        <h3>BUSINESS PAGE</h3>
+        <p>Does your business need more online presence? Our business page can help your business step into the future with great features like order forms, mailing & Subscription list and much more..  </p>
+      </div>
+    </div>
+  <hr>
+<!--ONLINE ORDER FORM SECTION -->
+<!--HEADLINE 3 -->  
+    <div class="container headline" id="order">
+      <div class="row">
+        <div class="col"><br><br><br><br>
+          <h1>ORDER ONLINE</h1><br>
+          <p>Are you ready to get the tools you need to take your business to the next level?<br> Fill out our online order form and purchase one of our creative digital media products to get started! </p>
+        </div>
+      </div>
+    </div> 
+    
+<!--ONLINE ORDER FORM-->  
+    <form>
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom03">Email</label>
+            <input type="email" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Phone</label>
+            <input type="tel" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid phone number.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom04">Package</label>
+            <select class="custom-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+              <option value="videoAd">Audio/Video Ad</option>
+              <option value="webPage">Webpage Development</option>
+              <option value="socialMM">Social Media Management</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a package.
+            </div>
+          </div>
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Please enter detailed styling instructions for your selected package. </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Upload Your Logo (.png or .jpg)</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Place Order</button>
+      </form>
+    </form><hr>
+<!-- ABOUT US SECTION -->
+<!--HEADLINE 4 -->  
+<div class="container headline" id="about">
+  <div class="row">
+    <div class="col"><br><br><br><br>
+      <h1>ABOUT US</h1><br>
+    </div>
+  </div>
+</div>
+<!--FEATURE SECTION-->
+<div class="row featurette">
+  <div class="col-md-5 order-md-1">
+    <img src="./assets/img/you-x-ventures-Oalh2MojUuk-unsplash.jpg" class="img-fluid">
+  </div>
+  <div class="col-md-7 order-md-2">
+    <h2>Avalanche Creative Media</h2>
+    <p class="lead"><em>"Your online solution for digital marketing."</em> <br> We are bridging the gap between the consumer and a team of highly trained digital medial specialists allowing for an easy way to order digital marketing tools. Does your social medial account need more activity? Do you need a webpage or online portfolio? Do you need audio/video content to promote your business? If the answer is yes to any of these questions, then we can help you get the results that you are looking for. Send us a message and speak with a specialist today!</p>
+    <button class="btn btn-primary" type="submit">Send Message</button>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+</div><!-- /.container -->
+<!--CONTACT US SECTION -->
+<!--HEADLINE 4 -->  
+  <div class="container headline" id="contact">
+    <div class="row">
+      <div class="col">
+        <h1>CONTACT US</h1><br>
+        <p>Got Questions? Tell us what's on your mind.</p>
+      </div>
+    </div>
+    
+  </div>
+<!--COMMENT BOX FORM -->
+  <form>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom01">Name</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom02">Email</label>
+        <input type="email" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1"> Leave a message and we will get in contact with you as soon as possible</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Send Message</button>
+  </form> <hr>
+<!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020 Avalanche Creative, Inc. &middot; 
+    <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a>--></p>
+  </footer>
+</main>
+
+      <script src="./jquery/dist/jquery.slim.js"></script>
+      <script src="./popper.js/dist/popper.min.js"></script>
+      <script src="./bootstrap/dist/js/bootstrap.js"></script>
+      <script src="./main.js"></script>
+    </body>
 </html>
